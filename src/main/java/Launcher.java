@@ -63,7 +63,7 @@ public class Launcher {
         ConnectableObservable<String> stringConnectableObservable = Observable.just("AS", "BD", "CFG").publish();
         stringConnectableObservable.subscribe(System.out::println);
         stringConnectableObservable.map(String::length).subscribe(System.out::println);
-        //fire !
+        //fire
         stringConnectableObservable.connect();
 
 
